@@ -1,0 +1,14 @@
+-search bar functionality 
+-admin login checking on both users and vendors and having full control(backend)
+-user login only after logging in can they add stuffs to cart(backend)
+-vendor login with add products and remove products (backend)
+-cart only after logging in [done]
+
+[login parts and signup parts done, now the front end and functions of the admin, vendor,cart remaining]
+
+acme project video watched till 1hour15, properly 1 hour watched 15 mins didnt watch properly 
+
+
+database name: acmegrade
+tables: user, admin, vendor
+attributes : user/vendor/adminid, username, password, timestamp

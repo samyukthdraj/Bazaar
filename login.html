@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <!-- #fcbad3 is the pink shade used -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <title>BAZAAR</title>
+    <body>
+        <!-- HEADER -->
+            <div class="header">
+                <div class="logo">
+                    <img class="logo" src="image_bazaar.png" alt="Logo Image">
+                </div>
+                <div class="home">
+                   <a href="home.html">Home</a>
+                 </div>
+                <div class="home">
+                    <button class="product">Products &#8675</button> 
+                  
+                    <div class="dropdown">
+                        <a href="bags.html">Bags</a>
+                        <a href="dress.html">Dress</a>
+                        <a href="heels.html">Heels</a>
+                        <a href="pants.html">Pants</a>
+                        <a href="shirts.html">Shirts</a>
+                        <a href="shoes.html">Shoes</a>
+                        <a href="watch.html">Watches</a>
+                    </div>
+                </div>
+                <div class="home">
+                    <form class="home search" action="search.html">
+                        <input class="searchbar" type="search" placeholder="Enter item name" style="width: 220px; height: 36px;">
+                        <button class="searchbar" style="font-size: large;">Search</button>
+                    </form>
+                </div>
+                <div class="home login">
+                    <div class="active1">
+                    <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxmain">
+                <div class="box1">
+                    <h1>Admin Login</h1>
+                    <form method="POST" action="loginadmin.php">
+                       <h3> Username:<br><input type="text" name="AdminUsername" placeholder="Enter Username"></h3><br><br>
+                       <h3> Password:<br><input type="password" name="AdminPassword" placeholder="Enter Password"></h3><br><br>
+                        <button class="submitbtn" type="submit">Login</button>
+                        <a href="signupadmin.html">Sign Up Here</a>
+                    </form>
+                </div>
+                <div class="box2">
+                    <h1>User Login</h1>
+                    <form method="POST" action="loginuser.php">
+                       <h3> Username:<br><input type="text" name="UserUsername" placeholder="Enter Username"></h3><br><br>
+                       <h3> Password:<br><input type="password" name="UserPassword" placeholder="Enter Password"></h3><br><br>
+                        <button class="submitbtn" type="submit" >Login</button>
+                        <a href="signupuser.html">Sign Up Here</a>
+                    </form>
+                </div>
+                <div class="box3">
+                    <h1>Vendor Login</h1>
+                    <form method="POST" action="loginvendor.php">
+                       <h3>Username:<br><input type="text" name="VendorUsername" placeholder="Enter Username"></h3><br><br>
+                       <h3> Password:<br><input type="password" name="VendorPassword" placeholder="Enter Password"></h3><br><br>
+                        <button class="submitbtn" type="submit">Login</button>
+                        <a href="signupvendor.html">Sign Up Here </a>
+                    </form>             
+                </div>
+            </div>
+
+    <!-- FOOTER -->
+    <div class="footer2">    
+        <img src="image_bazaar.png" alt="" class="logofooter">
+        <br>Contact us<br>
+        Mobile Number: <span style="color: #ed0e63;"> +91 8129759071 </span><br>
+        Email: <span style="color: #ed0e63;"> www.bazaarshopping.com</span><br><br>
+        &copy; All rights reserved by Bazaar.<br>   
+    </div>
+
+    </body>
+</html>

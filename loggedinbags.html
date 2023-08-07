@@ -1,0 +1,97 @@
+<!-- ALL LOGGED IN FILES CONTAIN THE CART FUNCTION, IT WASN'T AVAILABLE WHEN NOT LOGGED IN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAZAAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        function cart(pid)
+        {
+            res=confirm("Do you want to add this item to your cart?");
+            if(res)
+            {
+                window.location.href = "cart.php?pid=" +pid;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img class="logo" src="image_bazaar.png" alt="Logo Image">
+        </div>
+        <div class="home">
+            
+           <a href="loggedinhome.php">Home</a>
+            
+         </div>
+        <div class="home">
+            <div class="active2">
+            <a href="loggedinbags.html">Bags</a>
+            </div>
+        </div>
+        <div class="home">
+            <form class="home search" action="search.html">
+                <input class="searchbar" type="search" placeholder="Enter item name" style="width: 220px; height: 36px;">
+                <button class="searchbar" style="font-size: large;">Search</button>
+            </form>
+        </div>
+        <div class="home login">
+            <a href="signout.php">Signout</a>
+        </div>
+    </div>
+
+    <a href="cart.php" class="home" style="background-color: #fcbad3; border: none; position: absolute; top: 20px; right: 35px;"><i class='fas fa-cart-plus'></i></a></a>
+
+    <!-- Main Content -->
+    <!-- <div class="bags"> -->
+    <div class="bag1">
+        <h1>Pink Bag</h1>
+    </div>
+    <div class="bag2">
+        <img src="images/bag4.jpg" alt="">    
+        <p>Rs. 500</p>
+         <!-- <div class="rating">
+        <i class="fa-solid fa-star" style="color: #fcbad3;"></i>
+        <i class="fa-solid fa-star" style="color: #fcbad3;"></i>
+        <i class="fa-solid fa-star" style="color: #fcbad3;"></i>
+        <i class="fa-solid fa-star" style="color: #fcbad3;"></i>
+        <i class="fa-regular fa-star" style="color: #fcbad3;"></i>
+         </div> -->
+         <button class="cart" onclick="cart(<?php echo $pid; ?>)">Add to cart</button>
+    </div>
+    <div class="bag3">
+        <h1>Cream Bag</h1>
+        <div class="bag4">
+            <img src="images/bag5.jpg" alt="">
+            <p>Rs. 3000</p>
+            <button class="cart1">Add to cart</button>
+        </div>
+    </div>
+    <div class="bag5">
+        <h1>Black Bag</h1>
+        <div class="bag6">
+            <img src="images/bag6.jpg" alt="">
+            <p>Rs. 900</p>
+            <button class="cart2">Add to cart</button>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="footer1">    
+        <img src="image_bazaar.png" alt="" class="logofooter1">
+        <br>Contact us<br>
+        Mobile Number: <span style="color: #ed0e63;"> +91 8129759071 </span><br>
+        Email: <span style="color: #ed0e63;"> www.bazaarshopping.com</span><br><br>
+        &copy; All rights reserved by Bazaar.<br>   
+    </div>
+
+</body>
+</html>
